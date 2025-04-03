@@ -1,0 +1,32 @@
+package com.practice;
+class Animal
+{
+    public void eat() 
+    {
+        System.out.println("This animal eats food.");
+    }
+
+    public void sleep() 
+    {
+        System.out.println("This animal sleeps.");
+    }
+}
+
+class Bafelo extends Animal 
+{
+    public void grass()
+    {
+        System.out.println("The bafelo grass.");
+    }
+}
+public class Inheritance
+{
+	public static void main(String[] args) 
+	{
+		Bafelo B = new Bafelo();
+
+        B.eat();  
+        B.sleep(); 
+        B.grass();
+	}
+}

@@ -1,0 +1,35 @@
+package com.practice;
+class animal
+{
+	public void sound()
+	{
+		System.out.println("Animals make sounds");
+	}
+}
+class cow extends animal
+{
+	public void sound()
+	{
+		System.out.println("The Cow ghuuu");
+	}
+}
+class goat extends animal
+{
+	public void sound()
+	{
+		System.out.println("The goat beebeee");
+	}
+}
+public class polimorphism
+{
+	public static void main(String[] args)
+	{
+		animal A;
+		
+		A = new cow();
+		A.sound();
+		
+		A = new goat();
+		A.sound();
+	}
+}

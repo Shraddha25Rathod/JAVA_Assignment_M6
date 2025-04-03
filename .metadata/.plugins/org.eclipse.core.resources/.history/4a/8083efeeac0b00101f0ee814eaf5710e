@@ -1,0 +1,41 @@
+package com.practice;
+
+class Animal 
+{
+ public void sound() 
+ {
+     System.out.println("Animals make sounds");
+ }
+}
+
+class Cow extends Animal 
+{
+ @Override
+ public void sound()
+ {
+     System.out.println("The cow grass");
+ }
+}
+
+class Bafelo extends Animal
+{
+
+ @Override
+ public void sound() {
+     System.out.println("The Bafelo ");
+ }
+}
+
+public class Polymorphism
+{
+ public static void main(String[] args) 
+ {
+      Animal myAnimal; 
+
+     myAnimal = new Dog();
+     myAnimal.sound(); 
+
+     myAnimal = new Cat();
+     myAnimal.sound(); 
+ }
+}

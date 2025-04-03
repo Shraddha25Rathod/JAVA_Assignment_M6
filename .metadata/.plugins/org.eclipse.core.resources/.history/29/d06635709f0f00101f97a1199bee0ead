@@ -1,0 +1,16 @@
+package com.practice;
+import MyPackage.Utility;
+package MyPackage;
+
+
+public class Utility 
+{
+    public void greet()
+    {
+        System.out.println("Hello from the user-defined package!");
+    }
+}
+public class UserDefinedDemo 
+{
+	
+}

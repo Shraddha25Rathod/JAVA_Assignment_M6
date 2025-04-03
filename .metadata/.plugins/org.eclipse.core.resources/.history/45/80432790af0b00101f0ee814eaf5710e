@@ -1,0 +1,49 @@
+package com.practice;
+
+class animal 
+{
+ // Method to be overridden
+ public void sound() 
+ {
+     System.out.println("Animals make sounds");
+ }
+}
+
+class cow extends Animal 
+{
+
+ @Override
+ public void sound() 
+ {
+     System.out.println("The dog barks");
+ }
+ 
+}
+
+
+class got extends Animal 
+{
+ @Override
+ public void sound() 
+ {
+     System.out.println("The cat meows");
+ }
+}
+
+public class polimorphism 
+{
+ public static void main(String[] args)
+ {
+     
+     Animal a; 
+
+     
+     a = new Dog();
+     a.sound(); 
+
+    
+     a = new Cat();
+     a.sound();
+ }
+}
+
